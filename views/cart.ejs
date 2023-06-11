@@ -69,7 +69,7 @@
         }
         const api = async () => {
             console.log('fetch')
-            const response = await fetch('http://localhost:3000/payment_gateway/razorpay').then(response => response.json())
+            const response = await fetch('https://shop-5vf6.onrender.com/payment_gateway/razorpay').then(response => response.json())
                 .then(data => {
                     console.log('fetch after');
                     helperRazorpay(data);
